@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Namo Sevaa | Seamless Airport Hospitality & Meet and Greet Services</title>
+    <style>
+        /* BASE STYLES */
+        body { font-family: Arial, sans-serif; margin: 0; padding: 0; color: #333; }
+        .cta-button { 
+            background-color: #FFC107; 
+            color: #004080; 
+            padding: 15px 30px; 
+            text-decoration: none; 
+            border-radius: 5px; 
+            font-weight: bold; 
+            font-size: 18px; 
+            transition: background-color 0.3s, box-shadow 0.3s;
+        }
+        .cta-button:hover { 
+            background-color: #ff9800; 
+            box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+        }
+        
+        /* HEADER */
+        header { background-color: #004080; color: white; padding: 20px 5%; display: flex; justify-content: space-between; align-items: center; }
+        .logo h1 { margin: 0; font-size: 28px; }
+        .logo span { font-size: 14px; margin-top: -5px; display: block; } 
+        nav a:not(.cta-nav) { color: white; text-decoration: none; margin-left: 25px; font-weight: bold; }
+        .cta-nav { 
+            padding: 5px 10px !important; 
+            font-size: 16px; 
+            margin-left: 25px; 
+            display: inline-block; 
+        }
+
+        /* HERO SECTION */
+        .hero { background: url('airport-bg.jpg') no-repeat center center/cover; color: white; text-align: center; padding: 100px 5%; background-color: #002855; } 
+        .hero h2 { font-size: 40px; margin-bottom: 10px; }
+        .hero p { font-size: 20px; margin-bottom: 30px; }
+        
+        /* GENERAL SECTION STYLES */
+        .section { padding: 50px 5%; text-align: center; }
+        
+        /* SERVICES */
+        .services-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 30px; margin-top: 30px; }
+        .service-card { border: 1px solid #ddd; padding: 25px; border-radius: 8px; text-align: left; transition: transform 0.2s; }
+        .service-card:hover { transform: translateY(-5px); box-shadow: 0 4px 8px rgba(0,0,0,0.1); }
+        
+        /* ABOUT/TEAM */
+        .team-grid { display: flex; justify-content: center; gap: 40px; margin-top: 30px; }
+        .team-member { text-align: center; max-width: 250px; }
+        .team-member img { width: 150px; height: 150px; border-radius: 50%; background-color: #004080; object-fit: cover; margin-bottom: 15px; } 
+        
+        /* CONTACT */
+        .contact-info p { margin: 10px 0; font-size: 16px; }
+        .contact-info strong { color: #004080; } 
+        
+        /* FOOTER */
+        footer { background-color: #333; color: white; text-align: center; padding: 20px 5%; margin-top: 50px; }
+        footer a { color: #FFC107; text-decoration: none; margin: 0 10px; }
+
+        /* Mobile Adjustments */
+        @media (max-width: 600px) {
+            header { flex-direction: column; text-align: center; }
+            nav { margin-top: 10px; }
+            nav a { margin: 0 10px; }
+            .hero h2 { font-size: 32px; }
+            .hero p { font-size: 16px; }
+            .team-grid { flex-direction: column; align-items: center; }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="logo">
+            <h1>Namo Sevaa</h1>
+            <span>Seamless Airport Hospitality</span>
+        </div>
+        <nav>
+            <a href="#services">Services</a>
+            <a href="#about">About Us</a>
+            <a href="#contact">Contact</a>
+            <a href="*YOUR_BOOKING_LINK*" class="cta-button cta-nav">Book Now</a>
+        </nav>
+    </header>
+
+    <div class="hero">
+        <h2>Your Journey, Simplified.</h2>
+        <p>Experience seamless arrivals, departures, and transits across India’s major airports.</p>
+        <a href="*YOUR_BOOKING_LINK*" class="cta-button">Book Your Airport Assist Now</a>
+    </div>
+
+    <div id="services" class="section">
+        <h3>Our Premium Services</h3> 
+        <div class="services-grid">
+            <div class="service-card">
+                <h4>Meet & Greet (Arrival)</h4>
+                <p>Personalized assistance from the aircraft gate through customs to your car.</p>
+            </div>
+            <div class="service-card">
+                <h4>Departure Assistance</h4>
+                <p>Fast-track check-in, security clearance, and escort to the boarding gate.</p>
+            </div>
+            <div class="service-card">
+                <h4>Transit Facilitation</h4>
+                <p>Smooth, stress-free transfers between terminals for connecting flights.</p>
+            </div>
+            <div class="service-card">
+                <h4>Porter Services</h4>
+                <p>Dedicated luggage handling to save you time and effort.</p>
+            </div>
+        </div>
+    </div>
+    <div id="about" class="section" style="background-color: #f4f4f4;">
+        <h3>Our Leadership</h3> 
+        <p>A dedicated team ensuring your journey is nothing short of exceptional.</p>
+        <div class="team-grid">
+            <div class="team-member">
+                <h4>Archana Rana</h4>
+                <p>Head</p>
+            </div>
+            <div class="team-member">
+                <h4>Yogender Rana</h4>
+                <p>Manager</p> 
+
+                <h5>JAFAR</h5>
+                <p>manager</p>
+            </div>
+        </div>
+    </div>
+
+    <div id="contact" class="section">
+        <h3>Contact & Support</h3> 
+        <div class="contact-info">
+            <p>
+                For **Booking & General Queries** (Manager)<br>
+                Mobile: <a href="tel:+918860104278">**+91 88601 04278**</a> (Yogender Rana)
+            </p>
+            <p>
+                For **Direct Airport Assistance** (Team Contact - **Jafar**)<br>
+                Mobile: <a href="tel:+918800721786">**+91 88007 21786**</a> (Jafar)
+            </p>
+            <p>
+                Email: <a href="mailto:info@namosevaa.com">info@namosevaa.com</a>
+            </p>
+        </div>
+    </div>
+
+    <footer role="contentinfo">
+        <p>&copy; 2025 Namo Sevaa - Seamless Airport Hospitality. All Rights Reserved.</p>
+        <p><a href="#">Privacy Policy</a> | <a href="#">Terms of Service</a></p>
+    </footer>
+
+</body>
+</html>
